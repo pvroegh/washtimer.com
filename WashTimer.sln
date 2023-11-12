@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CCEDC190-EFAE-4239-BE30-F1CA3CF87AE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WashTimer.App", "src\WashTimer.App\WashTimer.App.csproj", "{72BBC552-8156-4D8A-885A-E541172CED7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{83FCA4E0-AB85-4CE8-BBE5-83F8DA920D2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WashTime.App.Tests", "tests\WashTime.App.Tests\WashTime.App.Tests.csproj", "{1D22DAF0-5A6E-477C-8777-37C21C295903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72BBC552-8156-4D8A-885A-E541172CED7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BBC552-8156-4D8A-885A-E541172CED7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BBC552-8156-4D8A-885A-E541172CED7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BBC552-8156-4D8A-885A-E541172CED7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D22DAF0-5A6E-477C-8777-37C21C295903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D22DAF0-5A6E-477C-8777-37C21C295903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D22DAF0-5A6E-477C-8777-37C21C295903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D22DAF0-5A6E-477C-8777-37C21C295903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72BBC552-8156-4D8A-885A-E541172CED7D} = {CCEDC190-EFAE-4239-BE30-F1CA3CF87AE1}
+		{1D22DAF0-5A6E-477C-8777-37C21C295903} = {83FCA4E0-AB85-4CE8-BBE5-83F8DA920D2A}
+	EndGlobalSection
+EndGlobal
