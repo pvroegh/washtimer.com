@@ -1,0 +1,46 @@
+﻿<div class="time-container">
+    <h2>@StringLocalizer["ProgramLengthLabel"]</h2>
+    <div class="time-input-container">
+        <table>
+            <tr>
+                <td>
+                    <button type="button" @onclick="async () => { Hours = Hours < 24 ? Hours + 1 : 0; await ValueChanged.InvokeAsync(); }">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_up
+                        </span>
+                    </button>
+                </td>
+                <td></td>
+                <td>
+                    <button type="button" @onclick="async () => { Minutes = Minutes < 59 ? Minutes + 1 : 00; await ValueChanged.InvokeAsync(); }">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_up
+                        </span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td><span>@Hours.ToString("00")</span></td>
+                <td><span>:</span></td>
+                <td><span>@Minutes.ToString("00")</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" @onclick="async () => { Hours = Hours > 0 ? Hours - 1 : 24; await ValueChanged.InvokeAsync(); }">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </button>
+                </td>
+                <td></td>
+                <td>
+                    <button type="button" @onclick="async () => { Minutes = Minutes > 0 ? Minutes - 1 : 59; await ValueChanged.InvokeAsync(); }">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

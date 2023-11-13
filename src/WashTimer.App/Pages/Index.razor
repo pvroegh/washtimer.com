@@ -1,5 +1,7 @@
 ﻿@page "/"
 
 <Header></Header>
-
 <CurrentTime></CurrentTime>
+<TargetTime @ref="_targetTimeReference" ValueChanged="() => CalculateAndDisplayOffset()"></TargetTime>
+<ProgramLength @ref="_programLengthReference" ValueChanged="() => CalculateAndDisplayOffset()"></ProgramLength>
+<OffsetDisplay Offset="_offsetResult.OffsetRoundedTo15Minutes"></OffsetDisplay>
