@@ -1,4 +1,14 @@
-﻿<div class="time-container">
+﻿<div class="offset-container">
     <h2>@StringLocalizer["TimeToSetLabel"]</h2>
-    <p>@Offset.ToString(@"hh\:mm")</p>
+    
+    <div class="selector-container">
+        <div class="selector">
+            <button @onclick="OnFifteenMinutesRoundingClick" class="rounding @(Rounding == RoundingMode.FifteenMinutes ? "selected" : "")" type="button">15m</button>
+            <button @onclick="OnThirtyMinutesRoundingClick" class="rounding @(Rounding == RoundingMode.ThirtyMinutes ? "selected" : "")" type="button">30m</button>
+            <button @onclick="OnSixtyMinutesRoundingClick" class="rounding @(Rounding == RoundingMode.SixtyMinutes ? "selected" : "")" type="button">60m</button>
+        </div>
+        <div class="offset">
+            <p>@RoundedOffset.ToString(@"hh\:mm")</p>
+        </div>
+    </div>
 </div>
