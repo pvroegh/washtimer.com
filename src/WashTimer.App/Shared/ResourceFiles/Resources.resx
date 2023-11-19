@@ -120,6 +120,9 @@
   <data name="CurrentTimeLabel" xml:space="preserve">
     <value>Current time</value>
   </data>
+  <data name="ProgramLengthLabel" xml:space="preserve">
+    <value>Program length</value>
+  </data>
   <data name="TargetTimeLabel" xml:space="preserve">
     <value>Target time</value>
   </data>

@@ -70,6 +70,15 @@ namespace WashTimer.App.Shared.ResourceFiles {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Program length.
+        /// </summary>
+        public static string ProgramLengthLabel {
+            get {
+                return ResourceManager.GetString("ProgramLengthLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Target time.
         /// </summary>
         public static string TargetTimeLabel {
