@@ -1,5 +1,5 @@
-[ ] Create site in Azure
-[ ] Create Github workflow
+[x] Create site in Azure
+[x] Create Github workflow
 [X] Create offset component
 [ ] Create localization
 [ ] Create dark/light mode switch
