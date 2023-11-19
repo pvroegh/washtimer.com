@@ -1,6 +1,8 @@
 ﻿<div class="culture-selector">
-    <select>
-        <option value="en-US" selected>US</option>
-        <option value="nl-NL">NL</option>
+    <select id="culture" @bind="Culture">
+        @foreach (var culture in supportedCultures)
+        {
+            <option value="@culture.TwoLetterISOLanguageName">@culture.TwoLetterISOLanguageName.ToUpper()</option>
+        }
     </select>
 </div>

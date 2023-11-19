@@ -8,4 +8,9 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddLocalization();
 
-await builder.Build().RunAsync();
+var host = await builder
+    .Build()
+    .AddCulture();
+    
+await host.RunAsync();
+
